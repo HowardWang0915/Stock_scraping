@@ -3,7 +3,7 @@ A small web-scraping program to scrape financial statements from [goodinfo](good
 Reading financial statements can be tough without graph support.
 The program can help visualize financial datas to get a breif understanding of the past performance of a company and help you predict the future
 
-**First features:**
+## **First features:**
 * Operating performance
   * 毛利率
   * 營業利益率
@@ -25,12 +25,45 @@ The program can help visualize financial datas to get a breif understanding of t
   * 現金股息殖利率
   * 高登報酬率
 
-**To be added:**
+## **How to use the program:**
+Open terminal and type:
+```
+python3 goodinfo.py
+```
+It will prompt
+```
+Enter the ticker of the stock: 
+```
+For Example we take 3008 (大力光)
+```
+Enter the ticker of the stock: 3008
+```
+It will prompt:
+```
+1: Operating performance
+2: Dividend Policy
+3: Cash Statements
+4: Rate of Return
+q: to quit
+Enter: 
+```
+Say we want to see the operating performance of 3008
+```
+1: Operating performance
+2: Dividend Policy
+3: Cash Statements
+4: Rate of Return
+q: to quit
+Enter: 1
+```
+It will open matplotlib and plot for you.
+
+## **To be added:**
 * Balance sheet analysis
 * P/E Ratio Analysis
 * Technical Analysis but I am so poor at this
 
-**Known bugs:**
+## **Known bugs:**
 * Companies paying dividend in quaters may cause scraping failure while scaping the dividend data. EX. 2330 台積電
 * It is impossible to scrape multiple company's data at one time due to the request limit of the server, might want to change the source of the datas.
 * You may exceed the request limit and gets blocked if you use the Gordon's analysis too frequently.
