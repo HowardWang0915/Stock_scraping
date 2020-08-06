@@ -1,5 +1,5 @@
 # Stock Scraping 
-A small web-scraping program to scrape financial statements from [goodinfo]goodinfo.tw using beautifulsoup. 
+A small web-scraping program to scrape financial statements from [goodinfo](goodinfo.tw) using beautifulsoup. 
 Reading financial statements can be tough without graph support.
 The program can help visualize financial datas to get a breif understanding of the past performance of a company and help you predict the future
 
